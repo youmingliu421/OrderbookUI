@@ -1,4 +1,4 @@
-import { MarketPriceDirection } from "../../types";
+import {MarketPriceDirection} from "../../types";
 import MarketUpIcon from "../../assets/icons/market-up.svg";
 import MarketDownIcon from "../../assets/icons/market-down.svg";
 import "./styles.scss";
@@ -30,17 +30,19 @@ export const MarketPrice = ({
 
   return (
     <div className="market-price">
-      <div
-        title="Last traded price"
-        className={`last-traded-price ${priceDirectionClass}`}
-      >
-        <img className="last-traded-price-icon" src={marketIcon} />
-        <span className="last-traded-price-value">{lastTradedPrice}</span>
-      </div>
+      <div className="market-price-badge">
+        <div
+          title="Last traded price"
+          className={`last-traded-price ${priceDirectionClass}`}
+        >
+          <img className="last-traded-price-icon" src={marketIcon} />
+          <span className="last-traded-price-value">{lastTradedPrice}</span>
+        </div>
 
-      <span title="Underlying spot market price" className="index-price">
-        {indexPrice}
-      </span>
+        <span title="Underlying spot market price" className="index-price">
+          {indexPrice}
+        </span>
+      </div>
     </div>
   );
 };
