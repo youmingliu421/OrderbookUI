@@ -2,7 +2,7 @@
 
 ### Demo
 
-https://main--rabbitx.netlify.app/
+https://rabbitx-orderbook.netlify.app/
 
 ## Approach taken
 
